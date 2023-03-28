@@ -1,0 +1,140 @@
+{
+  "patient": [
+    {
+      "fname": "Shubham",
+      "lname": "Kothavade",
+      "gender": "male",
+      "dob": "2023-03-16",
+      "email": "shubh@mail.com",
+      "mobile": "9011654570",
+      "aadhar": "428974380257",
+      "bloodGroup": "O+ve",
+      "country": "India",
+      "state": "maharashtra",
+      "district": "Nashik",
+      "city": "Nashik",
+      "pincode": "422009",
+      "address": "Nashik",
+      "file": {},
+      "userName": "Shubhamk",
+      "password": "Shubhamk",
+      "cpassword": "Shubhamk",
+      "active": "active",
+      "id": 1
+    },
+    {
+      "fname": "Shubham",
+      "lname": "dlvhdzl",
+      "gender": "male",
+      "dob": "2023-03-23",
+      "email": "test@mail.com",
+      "mobile": "35366756",
+      "aadhar": "346456575",
+      "bloodGroup": "B-ve",
+      "country": "India",
+      "state": "maharashtra",
+      "district": "sdkfjaf",
+      "city": "sfsddhf",
+      "pincode": "35353457",
+      "address": "fjhsdg",
+      "file": {},
+      "userName": "sjchsd",
+      "password": "sdfkhsdv",
+      "cpassword": "sdfhksdgfk",
+      "active": "active",
+      "id": 2
+    },
+    {
+      "fname": "shubham",
+      "lname": "kothavade",
+      "gender": "male",
+      "dob": "2023-03-16",
+      "email": "test@gmail.com",
+      "mobile": "3578357",
+      "aadhar": "657683596",
+      "bloodGroup": "B+ve",
+      "country": "India",
+      "state": "maharashtra",
+      "district": "sdfhagjfkaj",
+      "city": "sfsyufgse",
+      "pincode": "2345562382",
+      "address": "dfsdfusgfu",
+      "file": {},
+      "userName": "fvudifd",
+      "password": "dvdhgsgs",
+      "cpassword": "xvkdgs",
+      "active": "active",
+      "id": 3
+    }
+  ],
+  "doctor": [
+    {
+      "fname": "shubham",
+      "mname": "kishor",
+      "lname": "kothavade",
+      "specialist": "A+ve",
+      "gender": "male",
+      "email": "test@mail.com",
+      "code": "5356457",
+      "practicingIn": "India",
+      "hospital": "csdvj",
+      "mobile": "754690938546",
+      "file": {},
+      "state": "maharashtra",
+      "district": "India",
+      "taluka": "India",
+      "city": "India",
+      "GST": "238756",
+      "address": "nashik",
+      "userName": "shvbdjkv",
+      "password": "fusvhdvui",
+      "cpassword": "sdsdhjvvks",
+      "active": "active",
+      "id": 1
+    }
+  ],
+  "laboratory": [
+    {
+      "fname": "shubham",
+      "mname": "kishor",
+      "lname": "kothavade",
+      "lab": "lab1",
+      "specialist": "A-ve",
+      "gender": "male",
+      "email": "test@mail.com",
+      "code": "435454645",
+      "mobile": "5347598",
+      "state": "goa",
+      "district": "India",
+      "taluka": "India",
+      "city": "UK",
+      "GST": "3454645",
+      "file": {},
+      "address": "nashik",
+      "userName": "gsdhrhr",
+      "password": "sgdgdgdd",
+      "cpassword": "sdsdgddr",
+      "active": "active",
+      "id": 1
+    }
+  ],
+  "login": [
+    {
+      "id": 1
+    },
+    {
+      "userType": "Patient",
+      "id": 2
+    },
+    {
+      "userType": "Patient",
+      "id": 3
+    },
+    {
+      "userType": "Doctor",
+      "email": "shubham@mail.com",
+      "password": "123",
+      "id": 4
+    }
+  ]
+}
