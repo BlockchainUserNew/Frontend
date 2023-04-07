@@ -205,7 +205,7 @@ const Patient = () => {
             </Col>
             <Col md={4}>
               <Input
-                label="Pasword"
+                label="Password"
                 type="password"
                 placeholder="enter your password here"
                 value={password}
@@ -214,7 +214,7 @@ const Patient = () => {
             </Col>
             <Col md={4}>
               <Input
-                label="Confirm Pasword"
+                label="Confirm Password"
                 type="password"
                 placeholder="enter your confirm password here"
                 value={cpassword}

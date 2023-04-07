@@ -117,6 +117,13 @@ const PatientDetails = () => {
                     <th>Country</th>
                     <td>{PatientData?.country}</td>
                   </tr>
+
+                  {PatientData.history &&
+                  <tr>
+                  <th>History</th>
+                    <td>{PatientData?.history}</td>
+                  </tr>
+                  }
                 </thead>
 
               </Table>

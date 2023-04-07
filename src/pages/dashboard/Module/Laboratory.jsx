@@ -30,7 +30,7 @@ const LaboratoryRegistration = () => {
   const [address, setAddress] = useState();
   const [userName, setUserName] = useState();
   const [password, setPassword] = useState();
-  const [cpassword, setCPassword] = useState();
+ // const [cpassword, setCPassword] = useState();
   const [active, setActive] = useState();
   const navigate = useNavigate()
   const AddData = () => {
@@ -57,7 +57,7 @@ const LaboratoryRegistration = () => {
     formData.append("address", address)
     formData.append("userName", userName)
     formData.append("password", password)
-    formData.append("cpassword", cpassword)
+    // formData.append("cpassword", cpassword)
     formData.append("userType", "Laboratory")
     formData.append("active", active)
     formData.append("GST", GST)
@@ -98,7 +98,7 @@ const LaboratoryRegistration = () => {
     setAddress("");
     setUserName("");
     setPassword("");
-    setCPassword("");
+    //setCPassword("");
     setActive("");
     navigate("/sign-in")
   }
@@ -298,20 +298,9 @@ const LaboratoryRegistration = () => {
                 setValue={setCountry}
               />
             </Col> */}
-            <Col md={12}>
-              <Input
-                label="Address"
-                as="textarea"
-                placeholder="enter your address here"
-                value={address}
-                setValue={setAddress}
-                required={true}
-              />
-            </Col>
-            
             <Col md={4}>
               <Input
-                label="Pasword"
+                label="Password"
                 type="password"
                 placeholder="enter your password here"
                 value={password}
@@ -319,16 +308,16 @@ const LaboratoryRegistration = () => {
                 required={true}
               />
             </Col>
-            <Col md={4}>
+            {/* <Col md={4}>
               <Input
-                label="Confirm Pasword"
+                label="Confirm Password"
                 type="password"
                 placeholder="enter your confirm password here"
                 value={cpassword}
                 setValue={setCPassword}
                 required={true}
               />
-            </Col>
+            </Col> */}
             <Col md={4}>
               <Radio
                 label="Status"
@@ -343,6 +332,17 @@ const LaboratoryRegistration = () => {
                 required={true}
               />
             </Col>
+            <Col md={12}>
+              <Input
+                label="Address"
+                as="textarea"
+                placeholder="enter your address here"
+                value={address}
+                setValue={setAddress}
+                required={true}
+              />
+            </Col>
+            
           </Row>
           <Card.Footer >
             <Button className="text-dark bg-primary" onClick={AddData}>Submit</Button>

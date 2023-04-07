@@ -29,8 +29,9 @@ const PatientRegistration = () => {
   const [file, setFile] = useState();
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
-  const [cpassword, setCPassword] = useState("");
+  //const [cpassword, setCPassword] = useState("");
   const [accesskey, setAccesskey] = useState("");
+  const [history, setHistory] = useState("")
   const [active, setActive] = useState();
   const navigate = useNavigate()
   const AddData = (e) => {
@@ -68,10 +69,11 @@ const PatientRegistration = () => {
     formData.append("address", address)
     formData.append("userName", userName)
     formData.append("password", password)
-    formData.append("cpassword", cpassword)
+    // formData.append("cpassword", cpassword)
     formData.append("userType", "Patient")
     formData.append("active", active)
     formData.append("country", country)
+    formData.append("history", history)
     formData.append("accesskey", accesskey())
     formData.append("file", file)
     axios
@@ -107,8 +109,9 @@ const PatientRegistration = () => {
     setFile();
     setUserName("");
     setPassword("");
-    setCPassword("");
+    //setCPassword("");
     setActive("");
+    setHistory("")
     navigate("/sign-in")
 
   }
@@ -280,12 +283,15 @@ const PatientRegistration = () => {
                 />
               </Col>
 
-              <Col md={4}>
-                {/* <ImageUpload
-                  label="Photo_1"
-                  setValue={setImage}
-                /> */}
-                <input type="file" accept="image/*" onChange={(e) => setFile(e.target.files[0])} />
+              <Col md={12}>
+                <Input
+                  label="History"
+                  as="textarea"
+                  placeholder="enter your medical history"
+                  value={history}
+                  setValue={setHistory}
+                  // regex="/^[a-zA-Z0-9\s,'-]*$/"
+                />
               </Col>
               {/* <Col md={4}>
                 <Input
@@ -334,8 +340,15 @@ const PatientRegistration = () => {
                 />
               </Col>
               <Col md={4}>
+                <ImageUpload
+                  label="Photo"
+                  setValue={setFile}
+                />
+                {/* <input type="file" accept="image/*" onChange={(e) => setFile(e.target.files[0])} /> */}
+              </Col>
+              <Col md={4}>
                 <Input
-                  label="Pasword"
+                  label="Password"
                   type="password"
                   placeholder="enter your password here"
                   value={password}
@@ -345,9 +358,9 @@ const PatientRegistration = () => {
                   ErrorMsg="Enter your password here"
                 />
               </Col>
-              <Col md={4}>
+              {/* <Col md={4}>
                 <Input
-                  label="Confirm Pasword"
+                  label="Confirm Password"
                   type="password"
                   placeholder="enter your confirm password here"
                   value={cpassword}
@@ -356,7 +369,7 @@ const PatientRegistration = () => {
                   // regex="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/"
                   ErrorMsg="Enter your conform password here"
                 />
-              </Col>
+              </Col> */}
               <Col md={4}>
                 <Radio
                   label="Status"

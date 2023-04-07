@@ -31,7 +31,7 @@ const DoctorRegistration = () => {
     const [address, setAddress] = useState();
     const [userName, setUserName] = useState();
     const [password, setPassword] = useState();
-    const [cpassword, setCPassword] = useState();
+   // const [cpassword, setCPassword] = useState();
     const [active, setActive] = useState();
     const navigate = useNavigate()
     const AddData = () => {
@@ -57,7 +57,7 @@ const DoctorRegistration = () => {
         formData.append("address", address)
         formData.append("userName", userName)
         formData.append("password", password)
-        formData.append("cpassword", cpassword)
+        // formData.append("cpassword", cpassword)
         formData.append("userType", "Doctor")
         formData.append("fname", fname)
         formData.append("active", active)
@@ -100,7 +100,7 @@ const DoctorRegistration = () => {
         setAddress("");
         setUserName("");
         setPassword("");
-        setCPassword("");
+        //setCPassword("");
         setActive("");
         navigate("/sign-in")
     }
@@ -315,7 +315,7 @@ const DoctorRegistration = () => {
                         </Col>
                         <Col md={4}>
                             <Input
-                                label="Pasword"
+                                label="Password"
                                 type="password"
                                 placeholder="enter your password here"
                                 value={password}
@@ -323,16 +323,16 @@ const DoctorRegistration = () => {
                                 required={true}
                             />
                         </Col>
-                        <Col md={4}>
+                        {/* <Col md={4}>
                             <Input
-                                label="Confirm Pasword"
+                                label="Confirm Password"
                                 type="password"
                                 placeholder="enter your confirm password here"
                                 value={cpassword}
                                 setValue={setCPassword}
                                 required={true}
                             />
-                        </Col>
+                        </Col> */}
                         <Col md={4}>
                             <Radio
                                 label="Status"

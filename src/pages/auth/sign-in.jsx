@@ -127,7 +127,7 @@ export function SignIn() {
                   </Col>
                   <Col md={12}>
                     <Input
-                      label="Pasword"
+                      label="Password"
                       type="password"
                       placeholder="enter your password here"
                       value={password}
